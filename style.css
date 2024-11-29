@@ -1,0 +1,50 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* margin: 0; */
+    font-family: Arial, sans-serif;
+    background-color: #111010;
+}
+h1 , .status-display , .reset-button , .winner{
+    color: #f0f0f0;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #111010;
+}
+.game-board {
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 300px;
+    height: 300px;
+    border: 2px solid rgb(156, 153, 199);
+}
+
+.cell {
+    border: 1px solid rgb(136, 175, 159);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    cursor: pointer;
+    color: red;
+    transition: background-color 0.4s ease;
+}
+
+.cell:hover {
+    background-color: #f0f0f0;
+}
+
+/* Optional: Create board lines */
+.game-board div:nth-child(1),
+.game-board div:nth-child(2),
+.game-board div:nth-child(4),
+.game-board div:nth-child(5),
+.game-board div:nth-child(7),
+.game-board div:nth-child(8) {
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+}
