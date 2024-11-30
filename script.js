@@ -111,6 +111,7 @@ cells.forEach((cell, index) => {
         cells.forEach(cell => {
             cell.textContent = '';
         });
+        }
         if(game.checkDraw()){
             winner.textContent = 'its a draw';         
             game.reset();
@@ -119,7 +120,6 @@ cells.forEach((cell, index) => {
         cells.forEach(cell => {
             cell.textContent = '';
         });
-        }
         }
     });
 });
